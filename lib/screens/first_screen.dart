@@ -14,7 +14,10 @@ class _FirstScreenState extends State<FirstScreen> {
   final style = const TextStyle(
     fontWeight: FontWeight.bold,
   );
-  Color colour = Colors.grey;
+  Color colourH = Colors.grey;
+  Color colourP = Colors.grey;
+  Color colourK = Colors.grey;
+  Color colourC = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
@@ -66,46 +69,70 @@ class _FirstScreenState extends State<FirstScreen> {
                   TextButton(
                     onPressed: () {
                       setState(() {
-                        if (colour == Colors.grey) {
-                          colour = Colors.red;
-                        } else if (colour == Colors.red) {
-                          colour = Colors.grey;
+                        if (colourH == Colors.grey) {
+                          colourH = Colors.red;
+                        } else if (colourH == Colors.red) {
+                          colourH = Colors.grey;
                         }
                       });
                     },
                     child: Text(
                       'Home',
-                      style: TextStyle(fontSize: 25, color: colour),
+                      style: TextStyle(fontSize: 25, color: colourH),
                     ),
                   ),
                   const SizedBox(
                     width: 10,
                   ),
                   TextButton(
-                    onPressed: () {},
-                    child: const Text(
+                    onPressed: () {
+                      setState(() {
+                        if (colourP == Colors.grey) {
+                          colourP = Colors.red;
+                        } else if (colourP == Colors.red) {
+                          colourP = Colors.grey;
+                        }
+                      });
+                    },
+                    child: Text(
                       'Project',
-                      style: TextStyle(fontSize: 25, color: Colors.grey),
+                      style: TextStyle(fontSize: 25, color: colourP),
                     ),
                   ),
                   const SizedBox(
                     width: 10,
                   ),
                   TextButton(
-                    onPressed: () {},
-                    child: const Text(
+                    onPressed: () {
+                      setState(() {
+                        if (colourK == Colors.grey) {
+                          colourK = Colors.red;
+                        } else if (colourK == Colors.red) {
+                          colourK = Colors.grey;
+                        }
+                      });
+                    },
+                    child: Text(
                       'Knowledge',
-                      style: TextStyle(fontSize: 25, color: Colors.grey),
+                      style: TextStyle(fontSize: 25, color: colourK),
                     ),
                   ),
                   const SizedBox(
                     width: 10,
                   ),
                   TextButton(
-                    onPressed: () {},
-                    child: const Text(
+                    onPressed: () {
+                      setState(() {
+                        if (colourC == Colors.grey) {
+                          colourC = Colors.red;
+                        } else if (colourC == Colors.red) {
+                          colourC = Colors.grey;
+                        }
+                      });
+                    },
+                    child: Text(
                       'Contact',
-                      style: TextStyle(fontSize: 25, color: Colors.grey),
+                      style: TextStyle(fontSize: 25, color: colourC),
                     ),
                   ),
                 ],
