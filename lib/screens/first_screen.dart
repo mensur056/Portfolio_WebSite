@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({Key? key}) : super(key: key);
@@ -128,7 +129,8 @@ class _FirstScreenState extends State<FirstScreen> {
                     children: const [
                       Icon(
                         Icons.arrow_right_outlined,
-                        size: 35,color: Colors.greenAccent,
+                        size: 35,
+                        color: Colors.greenAccent,
                       ),
                       Text(
                         'Flutter Developer',
@@ -138,11 +140,13 @@ class _FirstScreenState extends State<FirstScreen> {
                             fontSize: 25),
                       ),
                     ],
-                  ), Row(
+                  ),
+                  Row(
                     children: const [
                       Icon(
                         Icons.arrow_right_outlined,
-                        size: 35,color: Colors.greenAccent,
+                        size: 35,
+                        color: Colors.greenAccent,
                       ),
                       Text(
                         'FireBase Developer',
@@ -152,7 +156,17 @@ class _FirstScreenState extends State<FirstScreen> {
                             fontSize: 25),
                       ),
                     ],
-                  ),Row(children: [],)
+                  ),
+                  Row(
+                    children: [
+                      SvgPicture.asset('images/github.svg'),
+                      SvgPicture.asset('images/dribble.svg'),
+                      SvgPicture.asset('images/icons8-facebook.svg'),
+                      SvgPicture.asset('images/icons8-instagram.svg'),
+                      SvgPicture.asset('images/icons8-twitter.svg'),
+                      SvgPicture.asset('images/linkedin.svg'),
+                    ],
+                  )
                 ],
               ),
             )
