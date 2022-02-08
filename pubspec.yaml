@@ -72,3 +72,6 @@ flutter:
     - family: Rowdies
       fonts:
         - asset: fonts/Rowdies-Regular.ttf
+    - family: Yellowtail
+      fonts:
+        - asset: fonts/Yellowtail-Regular.ttf

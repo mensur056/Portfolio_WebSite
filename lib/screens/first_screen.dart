@@ -93,11 +93,11 @@ class _FirstScreenState extends State<FirstScreen> {
             const Text(
               'SERXANOV',
               style:
-              TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize:40),
+              TextStyle(fontFamily: 'Rowdies', color: Colors.white,fontSize:40),
             ),   const Text(
               'MENSUR',
               style:
-              TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize:40),
+              TextStyle(fontFamily: 'Rowdies', color: Colors.white,fontSize:40),
             ),
           ],
         ),
