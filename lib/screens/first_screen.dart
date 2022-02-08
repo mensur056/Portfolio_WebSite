@@ -43,9 +43,11 @@ class _FirstScreenState extends State<FirstScreen> {
                         fontFamily: 'GreatVibes',
                         fontSize: 30,
                         color: Colors.white),
-                  ),const SizedBox(
+                  ),
+                  const SizedBox(
                     width: 5,
-                  ),const Text(
+                  ),
+                  const Text(
                     'Serxanov',
                     style: TextStyle(
                         fontFamily: 'GreatVibes',
@@ -83,6 +85,16 @@ class _FirstScreenState extends State<FirstScreen> {
                   TextButton(
                     onPressed: () {},
                     child: const Text(
+                      'Knowledge',
+                      style: TextStyle(fontSize: 25, color: Colors.grey),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
                       'Contact',
                       style: TextStyle(fontSize: 25, color: Colors.grey),
                     ),
@@ -104,12 +116,15 @@ class _FirstScreenState extends State<FirstScreen> {
                         fontFamily: 'Quicksand',
                         color: Colors.orange,
                         fontSize: 36),
-                  ),const SizedBox(width: 10,),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
                   const SizedBox(
                     height: 30,
                   ),
                   const Text(
-                    'SERXANOV',
+                    'SARKHANOV',
                     style: TextStyle(
                         fontFamily: 'Yellowtail',
                         color: Colors.green,
@@ -171,7 +186,7 @@ class _FirstScreenState extends State<FirstScreen> {
                           width: 40,
                           height: 40,
                         ),
-                        onPressed:_gitHubUrl,
+                        onPressed: _gitHubUrl,
                         iconSize: 40,
                       ),
                       const SizedBox(
@@ -184,7 +199,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed:_facebookURL,
+                          onPressed: _facebookURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -196,7 +211,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed:_instagramURL,
+                          onPressed: _instagramURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -208,7 +223,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed:_twitterURL,
+                          onPressed: _twitterURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -219,7 +234,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed:_linkedURL,
+                          onPressed: _linkedURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -230,7 +245,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed:_dribbleURL,
+                          onPressed: _dribbleURL,
                           iconSize: 40),
                     ],
                   )
@@ -243,6 +258,7 @@ class _FirstScreenState extends State<FirstScreen> {
     );
   }
 }
+
 _gitHubUrl() async {
   const url = "https://github.com/mensur056";
   if (await canLaunch(url)) {
@@ -251,6 +267,7 @@ _gitHubUrl() async {
     throw 'Could not launch $url';
   }
 }
+
 _dribbleURL() async {
   const url = "https://dribbble.com/Mansur9787";
   if (await canLaunch(url)) {
@@ -259,6 +276,7 @@ _dribbleURL() async {
     throw 'Could not launch $url';
   }
 }
+
 _linkedURL() async {
   const url = "https://www.linkedin.com/feed/";
   if (await canLaunch(url)) {
@@ -267,6 +285,7 @@ _linkedURL() async {
     throw 'Could not launch $url';
   }
 }
+
 _twitterURL() async {
   const url = "https://twitter.com/MansurSarkhanov";
   if (await canLaunch(url)) {
@@ -274,14 +293,18 @@ _twitterURL() async {
   } else {
     throw 'Could not launch $url';
   }
-}_facebookURL() async {
+}
+
+_facebookURL() async {
   const url = "https://www.facebook.com/mensur.serxanov.7";
   if (await canLaunch(url)) {
     await launch(url);
   } else {
     throw 'Could not launch $url';
   }
-}_instagramURL() async {
+}
+
+_instagramURL() async {
   const url = "https://www.instagram.com/m3nsur_7/";
   if (await canLaunch(url)) {
     await launch(url);
