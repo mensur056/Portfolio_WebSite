@@ -19,6 +19,7 @@ class _FirstScreenState extends State<FirstScreen> {
       backgroundColor: kPrimaryColor,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(
               height: 35,
@@ -85,24 +86,76 @@ class _FirstScreenState extends State<FirstScreen> {
                 ],
               ),
             ),
-            const Text(
-              'Welcome To My Portfolio !',
-              style:
-                  TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize:40),
+            const SizedBox(
+              height: 30,
             ),
-            const Text(
-              'SERXANOV',
-              style:
-              TextStyle(fontFamily: 'Yellowtail', color: Colors.white,fontSize:40),
-            ),   const Text(
-              'MENSUR',
-              style:
-              TextStyle(fontFamily: 'Yellowtail', color: Colors.white,fontSize:40),
-            ),  const Text(
-              'Flutter Developer',
-              style:
-              TextStyle(fontFamily: 'Rowdies', color: Colors.white,fontSize:40),
-            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 180),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Welcome To My Portfolio !',
+                    style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        color: Colors.white,
+                        fontSize: 40),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  const Text(
+                    'SERXANOV',
+                    style: TextStyle(
+                        fontFamily: 'Yellowtail',
+                        color: Colors.white,
+                        fontSize: 40),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  const Text(
+                    'MENSUR',
+                    style: TextStyle(
+                        fontFamily: 'Yellowtail',
+                        color: Colors.white,
+                        fontSize: 40),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.arrow_right_outlined,
+                        size: 35,color: Colors.greenAccent,
+                      ),
+                      Text(
+                        'Flutter Developer',
+                        style: TextStyle(
+                            fontFamily: 'Rowdies',
+                            color: Colors.white,
+                            fontSize: 25),
+                      ),
+                    ],
+                  ), Row(
+                    children: const [
+                      Icon(
+                        Icons.arrow_right_outlined,
+                        size: 35,color: Colors.greenAccent,
+                      ),
+                      Text(
+                        'FireBase Developer',
+                        style: TextStyle(
+                            fontFamily: 'Rowdies',
+                            color: Colors.white,
+                            fontSize: 25),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
