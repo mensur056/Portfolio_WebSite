@@ -152,7 +152,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             fontSize: 25),
                       ),
                     ],
-                  ),
+                  ),Row(children: [],)
                 ],
               ),
             )
