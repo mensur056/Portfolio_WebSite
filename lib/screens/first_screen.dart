@@ -39,7 +39,15 @@ class _FirstScreenState extends State<FirstScreen> {
                   const Text(
                     'Mensur',
                     style: TextStyle(
-                        fontFamily: 'Satisfy',
+                        fontFamily: 'GreatVibes',
+                        fontSize: 30,
+                        color: Colors.white),
+                  ),const SizedBox(
+                    width: 5,
+                  ),const Text(
+                    'Serxanov',
+                    style: TextStyle(
+                        fontFamily: 'GreatVibes',
                         fontSize: 30,
                         color: Colors.white),
                   ),
