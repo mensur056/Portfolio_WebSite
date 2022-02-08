@@ -157,14 +157,78 @@ class _FirstScreenState extends State<FirstScreen> {
                       ),
                     ],
                   ),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   Row(
                     children: [
-                      SvgPicture.asset('images/github.svg'),
-                      SvgPicture.asset('images/dribble.svg'),
-                      SvgPicture.asset('images/icons8-facebook.svg'),
-                      SvgPicture.asset('images/icons8-instagram.svg'),
-                      SvgPicture.asset('images/icons8-twitter.svg'),
-                      SvgPicture.asset('images/linkedin.svg'),
+                      IconButton(
+                        icon: SvgPicture.asset(
+                          'images/github.svg',
+                          width: 40,
+                          height: 40,
+                        ),
+                        onPressed: () {},
+                        iconSize: 40,
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                          icon: SvgPicture.asset(
+                            'images/icons8-facebook.svg',
+                            color: Colors.grey,
+                            width: 40,
+                            height: 40,
+                          ),
+                          onPressed: () {},
+                          iconSize: 40),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                          icon: SvgPicture.asset(
+                            'images/icons8-instagram.svg',
+                            color: Colors.grey,
+                            width: 40,
+                            height: 40,
+                          ),
+                          onPressed: () {},
+                          iconSize: 40),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                          icon: SvgPicture.asset(
+                            'images/icons8-twitter.svg',
+                            color: Colors.grey,
+                            width: 40,
+                            height: 40,
+                          ),
+                          onPressed: () {},
+                          iconSize: 40),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                          icon: SvgPicture.asset(
+                            'images/linkedin.svg',
+                            width: 40,
+                            height: 40,
+                          ),
+                          onPressed: () {},
+                          iconSize: 40),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                          icon: SvgPicture.asset(
+                            'images/dribble.svg',
+                            width: 40,
+                            height: 40,
+                          ),
+                          onPressed: () {},
+                          iconSize: 40),
                     ],
                   )
                 ],
