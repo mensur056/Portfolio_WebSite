@@ -22,22 +22,22 @@ class _FirstScreenState extends State<FirstScreen> {
         title: Row(
           children: const [
             Text(
-              'Flutter Dev<',
-              style: TextStyle(fontFamily: 'Quintessential',color:Colors.white),
+              'Flutter <',
+              style: TextStyle(fontFamily: 'Quintessential',fontSize:25,color:Colors.white),
             ),
             SizedBox(
               width: 10,
             ),
             Text(
               'Mensur',
-              style: TextStyle(fontFamily: 'Satisfy',fontSize:40,color:Colors.white),
+              style: TextStyle(fontFamily: 'Satisfy',fontSize:30,color:Colors.white),
             ),
             SizedBox(
               width: 10,
             ),
             Text(
-              '>Flutter Dev',
-              style: TextStyle(fontFamily: 'Quintessential',color:Colors.white),
+              '> Flutter',
+              style: TextStyle(fontFamily: 'Quintessential',fontSize:25,color:Colors.white),
             ),
           ],
         ),
