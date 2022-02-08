@@ -88,19 +88,27 @@ class _FirstScreenState extends State<FirstScreen> {
               ),
             ),
             const SizedBox(
-              height: 30,
+              height: 40,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 180),
+              padding: const EdgeInsets.only(left: 160),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Welcome To My Portfolio !',
-                    style: TextStyle(
-                        fontFamily: 'Quicksand',
+                  Row(
+                    children: [
+                      const Text(
+                        'Welcome To My Portfolio !',
+                        style: TextStyle(
+                            fontFamily: 'Quicksand',
+                            color: Colors.orange,
+                            fontSize: 36),
+                      ),const SizedBox(width: 10,),
+                      SvgPicture.asset(
+                        'images/icons8-flutter.svg',
                         color: Colors.white,
-                        fontSize: 40),
+                      )
+                    ],
                   ),
                   const SizedBox(
                     height: 30,
@@ -109,8 +117,8 @@ class _FirstScreenState extends State<FirstScreen> {
                     'SERXANOV',
                     style: TextStyle(
                         fontFamily: 'Yellowtail',
-                        color: Colors.white,
-                        fontSize: 40),
+                        color: Colors.green,
+                        fontSize: 36),
                   ),
                   const SizedBox(
                     height: 15,
@@ -119,8 +127,8 @@ class _FirstScreenState extends State<FirstScreen> {
                     'MENSUR',
                     style: TextStyle(
                         fontFamily: 'Yellowtail',
-                        color: Colors.white,
-                        fontSize: 40),
+                        color: Colors.green,
+                        fontSize: 36),
                   ),
                   const SizedBox(
                     height: 15,
