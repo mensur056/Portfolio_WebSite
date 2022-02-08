@@ -28,58 +28,58 @@ class _FirstScreenState extends State<FirstScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: Row(
-                children: const [
-                  Text(
+                children: [
+                  const Text(
                     'Flutter <',
                     style: TextStyle(
                         fontFamily: 'Quintessential',
                         fontSize: 25,
                         color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text(
+                  const Text(
                     'Mensur',
                     style: TextStyle(
                         fontFamily: 'Satisfy',
                         fontSize: 30,
                         color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text(
+                  const Text(
                     '> Flutter',
                     style: TextStyle(
                         fontFamily: 'Quintessential',
                         fontSize: 25,
                         color: Colors.white),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   TextButton(
-                    onPressed: null,
-                    child: Text(
+                    onPressed: () {},
+                    child: const Text(
                       'Home',
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   TextButton(
-                    onPressed: null,
-                    child: Text(
+                    onPressed: () {},
+                    child: const Text(
                       'Project',
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   TextButton(
-                    onPressed: null,
-                    child: Text(
+                    onPressed: () {},
+                    child: const Text(
                       'Contact',
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
