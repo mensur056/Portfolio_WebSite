@@ -38,31 +38,41 @@ class _FirstScreenState extends State<FirstScreen> {
             ),
             SizedBox(
               width: 10,
-            ),Text(
+            ),
+            Text(
               '> Flutter',
               style: TextStyle(
                   fontFamily: 'Quintessential',
                   fontSize: 25,
                   color: Colors.white),
             ),
-
             Spacer(),
-            Text(
-              'Home',
-              style: TextStyle(fontSize: 25, color: Colors.white),
+            TextButton(
+              onPressed: null,
+              child: Text(
+                'Home',
+                style: TextStyle(fontSize: 25, color: Colors.white),
+              ),
             ),
             SizedBox(
               width: 10,
             ),
-            Text(
-              'Project',
-              style: TextStyle(fontSize: 25, color: Colors.white),
-            ),SizedBox(
+            TextButton(
+              onPressed: null,
+              child: Text(
+                'Project',
+                style: TextStyle(fontSize: 25, color: Colors.white),
+              ),
+            ),
+            SizedBox(
               width: 10,
             ),
-            Text(
-              'Contact',
-              style: TextStyle(fontSize: 25, color: Colors.white),
+            TextButton(
+              onPressed: null,
+              child: Text(
+                'Contact',
+                style: TextStyle(fontSize: 25, color: Colors.white),
+              ),
             ),
           ],
         ),
