@@ -10,6 +10,10 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  final style = const TextStyle(
+    fontWeight: FontWeight.bold,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,14 +23,21 @@ class _FirstScreenState extends State<FirstScreen> {
           children: const [
             Text(
               'Flutter Dev<',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(fontFamily: 'Quintessential',color:Colors.white),
             ),
-            SizedBox(width: 10,),
-            Text('Mensur', style: TextStyle(color: Colors.white)),
-            SizedBox(width: 10,),
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              'Mensur',
+              style: TextStyle(fontFamily: 'Satisfy',fontSize:40,color:Colors.white),
+            ),
+            SizedBox(
+              width: 10,
+            ),
             Text(
               '>Flutter Dev',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(fontFamily: 'Quintessential',color:Colors.white),
             ),
           ],
         ),
