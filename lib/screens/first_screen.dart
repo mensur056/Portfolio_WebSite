@@ -14,6 +14,7 @@ class _FirstScreenState extends State<FirstScreen> {
   final style = const TextStyle(
     fontWeight: FontWeight.bold,
   );
+  Color colour = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 children: [
                   SvgPicture.asset(
                     'images/icons8-flutter.svg',
-                    color: Colors.white,
+                    color: Colors.grey,
                   ),
                   const SizedBox(
                     width: 10,
@@ -59,14 +60,22 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                   SvgPicture.asset(
                     'images/icons8-flutter.svg',
-                    color: Colors.white,
+                    color: Colors.grey,
                   ),
                   const Spacer(),
                   TextButton(
-                    onPressed: () {},
-                    child: const Text(
+                    onPressed: () {
+                      setState(() {
+                        if (colour == Colors.grey) {
+                          colour = Colors.red;
+                        } else if (colour == Colors.red) {
+                          colour = Colors.grey;
+                        }
+                      });
+                    },
+                    child: Text(
                       'Home',
-                      style: TextStyle(fontSize: 25, color: Colors.grey),
+                      style: TextStyle(fontSize: 25, color: colour),
                     ),
                   ),
                   const SizedBox(
