@@ -29,12 +29,9 @@ class _FirstScreenState extends State<FirstScreen> {
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: Row(
                 children: [
-                  const Text(
-                    'Flutter <',
-                    style: TextStyle(
-                        fontFamily: 'Quintessential',
-                        fontSize: 25,
-                        color: Colors.white),
+                  SvgPicture.asset(
+                    'images/icons8-flutter.svg',
+                    color: Colors.white,
                   ),
                   const SizedBox(
                     width: 10,
@@ -49,19 +46,16 @@ class _FirstScreenState extends State<FirstScreen> {
                   const SizedBox(
                     width: 10,
                   ),
-                  const Text(
-                    '> Flutter',
-                    style: TextStyle(
-                        fontFamily: 'Quintessential',
-                        fontSize: 25,
-                        color: Colors.white),
+                  SvgPicture.asset(
+                    'images/icons8-flutter.svg',
+                    color: Colors.white,
                   ),
                   const Spacer(),
                   TextButton(
                     onPressed: () {},
                     child: const Text(
                       'Home',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                      style: TextStyle(fontSize: 25, color: Colors.grey),
                     ),
                   ),
                   const SizedBox(
@@ -71,7 +65,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     onPressed: () {},
                     child: const Text(
                       'Project',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                      style: TextStyle(fontSize: 25, color: Colors.grey),
                     ),
                   ),
                   const SizedBox(
@@ -81,7 +75,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     onPressed: () {},
                     child: const Text(
                       'Contact',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                      style: TextStyle(fontSize: 25, color: Colors.grey),
                     ),
                   ),
                 ],
@@ -95,21 +89,13 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      const Text(
-                        'Welcome To My Portfolio !',
-                        style: TextStyle(
-                            fontFamily: 'Quicksand',
-                            color: Colors.orange,
-                            fontSize: 36),
-                      ),const SizedBox(width: 10,),
-                      SvgPicture.asset(
-                        'images/icons8-flutter.svg',
-                        color: Colors.white,
-                      )
-                    ],
-                  ),
+                  const Text(
+                    'Welcome To My Portfolio !',
+                    style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        color: Colors.orange,
+                        fontSize: 36),
+                  ),const SizedBox(width: 10,),
                   const SizedBox(
                     height: 30,
                   ),
@@ -138,7 +124,7 @@ class _FirstScreenState extends State<FirstScreen> {
                       Icon(
                         Icons.arrow_right_outlined,
                         size: 35,
-                        color: Colors.greenAccent,
+                        color: Colors.red,
                       ),
                       Text(
                         'Flutter Developer',
@@ -154,7 +140,7 @@ class _FirstScreenState extends State<FirstScreen> {
                       Icon(
                         Icons.arrow_right_outlined,
                         size: 35,
-                        color: Colors.greenAccent,
+                        color: Colors.red,
                       ),
                       Text(
                         'FireBase Developer',

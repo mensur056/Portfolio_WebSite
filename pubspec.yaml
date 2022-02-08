@@ -75,3 +75,6 @@ flutter:
     - family: Yellowtail
       fonts:
         - asset: fonts/Yellowtail-Regular.ttf
+    - family: GreatVibes
+      fonts:
+        - asset: fonts/GreatVibes-Regular.ttf
