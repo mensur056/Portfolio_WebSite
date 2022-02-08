@@ -93,9 +93,13 @@ class _FirstScreenState extends State<FirstScreen> {
             const Text(
               'SERXANOV',
               style:
-              TextStyle(fontFamily: 'Rowdies', color: Colors.white,fontSize:40),
+              TextStyle(fontFamily: 'Yellowtail', color: Colors.white,fontSize:40),
             ),   const Text(
               'MENSUR',
+              style:
+              TextStyle(fontFamily: 'Yellowtail', color: Colors.white,fontSize:40),
+            ),  const Text(
+              'Flutter Developer',
               style:
               TextStyle(fontFamily: 'Rowdies', color: Colors.white,fontSize:40),
             ),
