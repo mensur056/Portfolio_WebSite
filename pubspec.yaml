@@ -66,3 +66,6 @@ flutter:
     - family: Satisfy
       fonts:
         - asset: fonts/Satisfy-Regular.ttf
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand-VariableFont_wght.ttf
