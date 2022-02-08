@@ -86,10 +86,19 @@ class _FirstScreenState extends State<FirstScreen> {
               ),
             ),
             const Text(
-              'Welcome To My Portfolio',
+              'Welcome To My Portfolio !',
               style:
-                  TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize: 50),
-            )
+                  TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize:40),
+            ),
+            const Text(
+              'SERXANOV',
+              style:
+              TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize:40),
+            ),   const Text(
+              'MENSUR',
+              style:
+              TextStyle(fontFamily: 'Quicksand', color: Colors.white,fontSize:40),
+            ),
           ],
         ),
       ),
