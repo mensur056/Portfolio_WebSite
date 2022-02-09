@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -15,7 +16,7 @@ class _FirstScreenState extends State<FirstScreen> {
   final style = const TextStyle(
     fontWeight: FontWeight.bold,
   );
-  Color colourH = Colors.grey;
+  Color colourH = Colors.red;
   Color colourP = Colors.grey;
   Color colourK = Colors.grey;
   Color colourC = Colors.grey;
@@ -72,6 +73,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       setState(() {
                         if (colourH == Colors.grey) {
                           colourH = Colors.red;
+                          colourC=Colors.grey;
+                          colourK=Colors.grey;
+                          colourP=Colors.grey;
                         } else if (colourH == Colors.red) {
                           colourH = Colors.grey;
                         }
@@ -90,6 +94,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       setState(() {
                         if (colourP == Colors.grey) {
                           colourP = Colors.red;
+                          colourC=Colors.grey;
+                          colourK=Colors.grey;
+                          colourH=Colors.grey;
                         } else if (colourP == Colors.red) {
                           colourP = Colors.grey;
                         }
@@ -108,6 +115,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       setState(() {
                         if (colourK == Colors.grey) {
                           colourK = Colors.red;
+                          colourC=Colors.grey;
+                          colourP=Colors.grey;
+                          colourH=Colors.grey;
                         } else if (colourK == Colors.red) {
                           colourK = Colors.grey;
                         }
@@ -126,6 +136,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       setState(() {
                         if (colourC == Colors.grey) {
                           colourC = Colors.red;
+                          colourP=Colors.grey;
+                          colourK=Colors.grey;
+                          colourH=Colors.grey;
                         } else if (colourC == Colors.red) {
                           colourC = Colors.grey;
                         }
@@ -181,34 +194,42 @@ class _FirstScreenState extends State<FirstScreen> {
                     height: 15,
                   ),
                   Row(
-                    children: const [
-                      Icon(
+                    children: [
+                      const Icon(
                         Icons.arrow_right_outlined,
                         size: 35,
                         color: Colors.red,
                       ),
-                      Text(
-                        'Flutter Developer',
-                        style: TextStyle(
-                            fontFamily: 'Rowdies',
-                            color: Colors.white,
-                            fontSize: 25),
+                      AnimatedTextKit(
+                        animatedTexts: [
+                          TypewriterAnimatedText(
+                            'Flutter Developer',
+                            textStyle: const TextStyle(
+                                fontFamily: 'Rowdies',
+                                color: Colors.white,
+                                fontSize: 25),
+                          )
+                        ],
                       ),
                     ],
                   ),
                   Row(
-                    children: const [
-                      Icon(
+                    children:  [
+                      const Icon(
                         Icons.arrow_right_outlined,
                         size: 35,
                         color: Colors.red,
                       ),
-                      Text(
-                        'FireBase Developer',
-                        style: TextStyle(
-                            fontFamily: 'Rowdies',
-                            color: Colors.white,
-                            fontSize: 25),
+                      AnimatedTextKit(
+                        animatedTexts: [
+                          TypewriterAnimatedText(
+                            'FireBase Developer',
+                            textStyle: const TextStyle(
+                                fontFamily: 'Rowdies',
+                                color: Colors.white,
+                                fontSize: 25),
+                          )
+                        ],
                       ),
                     ],
                   ),
