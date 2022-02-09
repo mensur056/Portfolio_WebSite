@@ -37,8 +37,8 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Row(
                 children: [
                   SvgPicture.asset(
-                    'images/icons8-flutter.svg',
-                    color: Colors.grey,
+                    'images/icons8-flutter.svg',width: 22,height: 22,
+                    color: Colors.blue,
                   ),
                   const SizedBox(
                     width: 10,
@@ -64,8 +64,8 @@ class _FirstScreenState extends State<FirstScreen> {
                     width: 10,
                   ),
                   SvgPicture.asset(
-                    'images/icons8-flutter.svg',
-                    color: Colors.grey,
+                    'images/icons8-flutter.svg',width: 22,height: 22,
+                    color: Colors.blue,
                   ),
                   const Spacer(),
                   TextButton(
@@ -200,7 +200,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         size: 35,
                         color: Colors.red,
                       ),
-                      AnimatedTextKit(
+                      AnimatedTextKit(pause: const Duration(seconds: 2),
                         animatedTexts: [
                           TypewriterAnimatedText(
                             'Flutter Developer',
@@ -220,7 +220,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         size: 35,
                         color: Colors.red,
                       ),
-                      AnimatedTextKit(
+                      AnimatedTextKit(pause: const Duration(seconds: 2),
                         animatedTexts: [
                           TypewriterAnimatedText(
                             'FireBase Developer',
