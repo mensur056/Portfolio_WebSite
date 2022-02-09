@@ -27,36 +27,67 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.black, actions: [
-        SvgPicture.asset(
-          'images/icons8-flutter.svg',
-          width: 22,
-          height: 22,
-          color: Colors.blue,
+        const SizedBox(
+          width: 85,
+        ),
+        Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            SvgPicture.asset(
+              'images/icons8-flutter.svg',
+              width: 22,
+              height: 22,
+              color: Colors.blue,
+            ),
+          ],
         ),
         const SizedBox(
           width: 10,
         ),
-        const Text(
-          'Mensur',
-          style: TextStyle(
-              fontFamily: 'GreatVibes', fontSize: 30, color: Colors.white),
+        Column(
+          children: const [
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              'Mensur',
+              style: TextStyle(
+                  fontFamily: 'GreatVibes', fontSize: 30, color: Colors.white),
+            ),
+          ],
         ),
         const SizedBox(
           width: 5,
         ),
-        const Text(
-          'Serxanov',
-          style: TextStyle(
-              fontFamily: 'GreatVibes', fontSize: 30, color: Colors.white),
+        Column(
+          children: const [
+            SizedBox(
+              height: 15,
+            ),
+            Text(
+              'Sarkhanov',
+              style: TextStyle(
+                  fontFamily: 'GreatVibes', fontSize: 30, color: Colors.white),
+            ),
+          ],
         ),
         const SizedBox(
           width: 10,
         ),
-        SvgPicture.asset(
-          'images/icons8-flutter.svg',
-          width: 22,
-          height: 22,
-          color: Colors.blue,
+        Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            SvgPicture.asset(
+              'images/icons8-flutter.svg',
+              width: 22,
+              height: 22,
+              color: Colors.blue,
+            ),
+          ],
         ),
         const Spacer(),
         TextButton(
