@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/widgets/click_URL.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FirstScreen extends StatefulWidget {
@@ -222,7 +223,7 @@ class _FirstScreenState extends State<FirstScreen> {
                           width: 40,
                           height: 40,
                         ),
-                        onPressed: _gitHubUrl,
+                        onPressed: gitHubUrl,
                         iconSize: 40,
                       ),
                       const SizedBox(
@@ -235,7 +236,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed: _facebookURL,
+                          onPressed: facebookURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -247,7 +248,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed: _instagramURL,
+                          onPressed: instagramURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -259,7 +260,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed: _twitterURL,
+                          onPressed: twitterURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -270,7 +271,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed: _linkedURL,
+                          onPressed: linkedURL,
                           iconSize: 40),
                       const SizedBox(
                         width: 10,
@@ -281,7 +282,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             width: 40,
                             height: 40,
                           ),
-                          onPressed: _dribbleURL,
+                          onPressed: dribbleURL,
                           iconSize: 40),
                     ],
                   )
@@ -292,59 +293,5 @@ class _FirstScreenState extends State<FirstScreen> {
         ),
       ),
     );
-  }
-}
-
-_gitHubUrl() async {
-  const url = "https://github.com/mensur056";
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_dribbleURL() async {
-  const url = "https://dribbble.com/Mansur9787";
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_linkedURL() async {
-  const url = "https://www.linkedin.com/feed/";
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_twitterURL() async {
-  const url = "https://twitter.com/MansurSarkhanov";
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_facebookURL() async {
-  const url = "https://www.facebook.com/mensur.serxanov.7";
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_instagramURL() async {
-  const url = "https://www.instagram.com/m3nsur_7/";
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
   }
 }
