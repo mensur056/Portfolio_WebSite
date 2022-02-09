@@ -2,17 +2,17 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/screens/project_screen.dart';
 import 'package:portfolio/widgets/click_URL.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-class FirstScreen extends StatefulWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  _FirstScreenState createState() => _FirstScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _FirstScreenState extends State<FirstScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   final style = const TextStyle(
     fontWeight: FontWeight.bold,
   );
@@ -37,7 +37,9 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Row(
                 children: [
                   SvgPicture.asset(
-                    'images/icons8-flutter.svg',width: 22,height: 22,
+                    'images/icons8-flutter.svg',
+                    width: 22,
+                    height: 22,
                     color: Colors.blue,
                   ),
                   const SizedBox(
@@ -64,18 +66,24 @@ class _FirstScreenState extends State<FirstScreen> {
                     width: 10,
                   ),
                   SvgPicture.asset(
-                    'images/icons8-flutter.svg',width: 22,height: 22,
+                    'images/icons8-flutter.svg',
+                    width: 22,
+                    height: 22,
                     color: Colors.blue,
                   ),
                   const Spacer(),
                   TextButton(
                     onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeScreen()));
                       setState(() {
                         if (colourH == Colors.grey) {
                           colourH = Colors.red;
-                          colourC=Colors.grey;
-                          colourK=Colors.grey;
-                          colourP=Colors.grey;
+                          colourC = Colors.grey;
+                          colourK = Colors.grey;
+                          colourP = Colors.grey;
                         } else if (colourH == Colors.red) {
                           colourH = Colors.grey;
                         }
@@ -91,12 +99,16 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                   TextButton(
                     onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ProjectScreen()));
                       setState(() {
                         if (colourP == Colors.grey) {
                           colourP = Colors.red;
-                          colourC=Colors.grey;
-                          colourK=Colors.grey;
-                          colourH=Colors.grey;
+                          colourC = Colors.grey;
+                          colourK = Colors.grey;
+                          colourH = Colors.grey;
                         } else if (colourP == Colors.red) {
                           colourP = Colors.grey;
                         }
@@ -115,9 +127,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       setState(() {
                         if (colourK == Colors.grey) {
                           colourK = Colors.red;
-                          colourC=Colors.grey;
-                          colourP=Colors.grey;
-                          colourH=Colors.grey;
+                          colourC = Colors.grey;
+                          colourP = Colors.grey;
+                          colourH = Colors.grey;
                         } else if (colourK == Colors.red) {
                           colourK = Colors.grey;
                         }
@@ -136,9 +148,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       setState(() {
                         if (colourC == Colors.grey) {
                           colourC = Colors.red;
-                          colourP=Colors.grey;
-                          colourK=Colors.grey;
-                          colourH=Colors.grey;
+                          colourP = Colors.grey;
+                          colourK = Colors.grey;
+                          colourH = Colors.grey;
                         } else if (colourC == Colors.red) {
                           colourC = Colors.grey;
                         }
@@ -200,7 +212,8 @@ class _FirstScreenState extends State<FirstScreen> {
                         size: 35,
                         color: Colors.red,
                       ),
-                      AnimatedTextKit(pause: const Duration(seconds: 2),
+                      AnimatedTextKit(
+                        pause: const Duration(seconds: 2),
                         animatedTexts: [
                           TypewriterAnimatedText(
                             'Flutter Developer',
@@ -214,13 +227,14 @@ class _FirstScreenState extends State<FirstScreen> {
                     ],
                   ),
                   Row(
-                    children:  [
+                    children: [
                       const Icon(
                         Icons.arrow_right_outlined,
                         size: 35,
                         color: Colors.red,
                       ),
-                      AnimatedTextKit(pause: const Duration(seconds: 2),
+                      AnimatedTextKit(
+                        pause: const Duration(seconds: 2),
                         animatedTexts: [
                           TypewriterAnimatedText(
                             'FireBase Developer',
