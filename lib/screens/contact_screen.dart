@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class KnowledgeScreen extends StatelessWidget {
-  const KnowledgeScreen({Key? key}) : super(key: key);
+class ContactScreen extends StatelessWidget {
+  const ContactScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: const [
         Text(
-          'Knowledge',
+          'Contact',
           style: TextStyle(color: Colors.white),
         )
       ],

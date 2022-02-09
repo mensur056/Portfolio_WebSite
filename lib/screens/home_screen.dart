@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/screens/contact_screen.dart';
 import 'package:portfolio/screens/knowledge_screen.dart';
 import 'package:portfolio/screens/project_screen.dart';
 import 'package:portfolio/widgets/click_URL.dart';
@@ -166,162 +167,169 @@ class _HomeScreenState extends State<HomeScreen> {
                   : Center(
                       child: colourK == Colors.red
                           ? const KnowledgeScreen()
-                          : Padding(
-                              padding: const EdgeInsets.only(left: 160),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    'Welcome To My Portfolio !',
-                                    style: TextStyle(
-                                        fontFamily: 'Quicksand',
-                                        color: Colors.orange,
-                                        fontSize: 36),
-                                  ),
-                                  const SizedBox(
-                                    width: 10,
-                                  ),
-                                  const SizedBox(
-                                    height: 30,
-                                  ),
-                                  const Text(
-                                    'SARKHANOV',
-                                    style: TextStyle(
-                                        fontFamily: 'Yellowtail',
-                                        color: Colors.green,
-                                        fontSize: 36),
-                                  ),
-                                  const SizedBox(
-                                    height: 15,
-                                  ),
-                                  const Text(
-                                    'MENSUR',
-                                    style: TextStyle(
-                                        fontFamily: 'Yellowtail',
-                                        color: Colors.green,
-                                        fontSize: 36),
-                                  ),
-                                  const SizedBox(
-                                    height: 15,
-                                  ),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.arrow_right_outlined,
-                                        size: 35,
-                                        color: Colors.red,
-                                      ),
-                                      AnimatedTextKit(
-                                        pause: const Duration(seconds: 2),
-                                        animatedTexts: [
-                                          TypewriterAnimatedText(
-                                            'Flutter Developer',
-                                            textStyle: const TextStyle(
-                                                fontFamily: 'Rowdies',
-                                                color: Colors.white,
-                                                fontSize: 25),
+                          : Center(
+                              child: colourC == Colors.red
+                                  ? const ContactScreen()
+                                  : Padding(
+                                      padding: const EdgeInsets.only(left: 160),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const Text(
+                                            'Welcome To My Portfolio !',
+                                            style: TextStyle(
+                                                fontFamily: 'Quicksand',
+                                                color: Colors.orange,
+                                                fontSize: 36),
+                                          ),
+                                          const SizedBox(
+                                            width: 10,
+                                          ),
+                                          const SizedBox(
+                                            height: 30,
+                                          ),
+                                          const Text(
+                                            'SARKHANOV',
+                                            style: TextStyle(
+                                                fontFamily: 'Yellowtail',
+                                                color: Colors.green,
+                                                fontSize: 36),
+                                          ),
+                                          const SizedBox(
+                                            height: 15,
+                                          ),
+                                          const Text(
+                                            'MENSUR',
+                                            style: TextStyle(
+                                                fontFamily: 'Yellowtail',
+                                                color: Colors.green,
+                                                fontSize: 36),
+                                          ),
+                                          const SizedBox(
+                                            height: 15,
+                                          ),
+                                          Row(
+                                            children: [
+                                              const Icon(
+                                                Icons.arrow_right_outlined,
+                                                size: 35,
+                                                color: Colors.red,
+                                              ),
+                                              AnimatedTextKit(
+                                                pause:
+                                                    const Duration(seconds: 2),
+                                                animatedTexts: [
+                                                  TypewriterAnimatedText(
+                                                    'Flutter Developer',
+                                                    textStyle: const TextStyle(
+                                                        fontFamily: 'Rowdies',
+                                                        color: Colors.white,
+                                                        fontSize: 25),
+                                                  )
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              const Icon(
+                                                Icons.arrow_right_outlined,
+                                                size: 35,
+                                                color: Colors.red,
+                                              ),
+                                              AnimatedTextKit(
+                                                pause:
+                                                    const Duration(seconds: 2),
+                                                animatedTexts: [
+                                                  TypewriterAnimatedText(
+                                                    'FireBase Developer',
+                                                    textStyle: const TextStyle(
+                                                        fontFamily: 'Rowdies',
+                                                        color: Colors.white,
+                                                        fontSize: 25),
+                                                  )
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          const SizedBox(
+                                            height: 15,
+                                          ),
+                                          Row(
+                                            children: [
+                                              IconButton(
+                                                icon: SvgPicture.asset(
+                                                  'images/github.svg',
+                                                  width: 40,
+                                                  height: 40,
+                                                ),
+                                                onPressed: gitHubUrl,
+                                                iconSize: 40,
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              IconButton(
+                                                  icon: SvgPicture.asset(
+                                                    'images/icons8-facebook.svg',
+                                                    color: Colors.grey,
+                                                    width: 40,
+                                                    height: 40,
+                                                  ),
+                                                  onPressed: facebookURL,
+                                                  iconSize: 40),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              IconButton(
+                                                  icon: SvgPicture.asset(
+                                                    'images/icons8-instagram.svg',
+                                                    color: Colors.grey,
+                                                    width: 40,
+                                                    height: 40,
+                                                  ),
+                                                  onPressed: instagramURL,
+                                                  iconSize: 40),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              IconButton(
+                                                  icon: SvgPicture.asset(
+                                                    'images/icons8-twitter.svg',
+                                                    color: Colors.grey,
+                                                    width: 40,
+                                                    height: 40,
+                                                  ),
+                                                  onPressed: twitterURL,
+                                                  iconSize: 40),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              IconButton(
+                                                  icon: SvgPicture.asset(
+                                                    'images/linkedin.svg',
+                                                    width: 40,
+                                                    height: 40,
+                                                  ),
+                                                  onPressed: linkedURL,
+                                                  iconSize: 40),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              IconButton(
+                                                  icon: SvgPicture.asset(
+                                                    'images/dribble.svg',
+                                                    width: 40,
+                                                    height: 40,
+                                                  ),
+                                                  onPressed: dribbleURL,
+                                                  iconSize: 40),
+                                            ],
                                           )
                                         ],
                                       ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.arrow_right_outlined,
-                                        size: 35,
-                                        color: Colors.red,
-                                      ),
-                                      AnimatedTextKit(
-                                        pause: const Duration(seconds: 2),
-                                        animatedTexts: [
-                                          TypewriterAnimatedText(
-                                            'FireBase Developer',
-                                            textStyle: const TextStyle(
-                                                fontFamily: 'Rowdies',
-                                                color: Colors.white,
-                                                fontSize: 25),
-                                          )
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(
-                                    height: 15,
-                                  ),
-                                  Row(
-                                    children: [
-                                      IconButton(
-                                        icon: SvgPicture.asset(
-                                          'images/github.svg',
-                                          width: 40,
-                                          height: 40,
-                                        ),
-                                        onPressed: gitHubUrl,
-                                        iconSize: 40,
-                                      ),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      IconButton(
-                                          icon: SvgPicture.asset(
-                                            'images/icons8-facebook.svg',
-                                            color: Colors.grey,
-                                            width: 40,
-                                            height: 40,
-                                          ),
-                                          onPressed: facebookURL,
-                                          iconSize: 40),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      IconButton(
-                                          icon: SvgPicture.asset(
-                                            'images/icons8-instagram.svg',
-                                            color: Colors.grey,
-                                            width: 40,
-                                            height: 40,
-                                          ),
-                                          onPressed: instagramURL,
-                                          iconSize: 40),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      IconButton(
-                                          icon: SvgPicture.asset(
-                                            'images/icons8-twitter.svg',
-                                            color: Colors.grey,
-                                            width: 40,
-                                            height: 40,
-                                          ),
-                                          onPressed: twitterURL,
-                                          iconSize: 40),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      IconButton(
-                                          icon: SvgPicture.asset(
-                                            'images/linkedin.svg',
-                                            width: 40,
-                                            height: 40,
-                                          ),
-                                          onPressed: linkedURL,
-                                          iconSize: 40),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      IconButton(
-                                          icon: SvgPicture.asset(
-                                            'images/dribble.svg',
-                                            width: 40,
-                                            height: 40,
-                                          ),
-                                          onPressed: dribbleURL,
-                                          iconSize: 40),
-                                    ],
-                                  )
-                                ],
-                              ),
+                                    ),
                             ),
                     ),
             )

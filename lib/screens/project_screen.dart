@@ -6,7 +6,12 @@ class ProjectScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [Text('Hello',style: TextStyle(color: Colors.white),)],
+      children: const [
+        Text(
+          'Project',
+          style: TextStyle(color: Colors.white),
+        )
+      ],
     );
   }
 }
