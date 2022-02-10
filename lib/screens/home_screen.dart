@@ -32,45 +32,41 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.only(top: 25.0),
             child: Row(
-              children: [
-                const SizedBox(
+              children: const [
+                SizedBox(
                   width: 85,
                 ),
-                SvgPicture.asset(
-                  'images/icons8-flutter.svg',
-                  width: 22,
-                  height: 22,
-                  color: Colors.white,
+                Text(
+                  '< /',
+                  style: TextStyle(color: Colors.white, fontSize: 30,fontFamily: 'Quintessential'),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 10,
                 ),
-                const Text(
+                Text(
                   'Mensur',
                   style: TextStyle(
                       fontFamily: 'GreatVibes',
                       fontSize: 30,
                       color: Colors.white),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 5,
                 ),
-                const Text(
+                Text(
                   'Sarkhanov',
                   style: TextStyle(
                       fontFamily: 'GreatVibes',
                       fontSize: 30,
                       color: Colors.white),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 10,
                 ),
-                SvgPicture.asset(
-                  'images/icons8-flutter.svg',
-                  width: 22,
-                  height: 22,
-                  color: Colors.white,
-                ),
+                Text(
+                  '/ >',
+                  style: TextStyle(color: Colors.white, fontSize: 30,fontFamily: 'Quintessential'),
+                )
               ],
             ),
           ),
@@ -404,7 +400,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 5,
                     ),
-                    Text('SQL, Python, HTML, CSS, Java Script, Arduino,',style: TextStyle(color: Colors.grey, fontSize: 15),)
+                    Text(
+                      'SQL, Python, HTML, CSS, Java Script, Arduino,',
+                      style: TextStyle(color: Colors.grey, fontSize: 15),
+                    )
                   ],
                 )
               ],
