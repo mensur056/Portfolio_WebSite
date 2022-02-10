@@ -347,10 +347,12 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(
             height: 198,
           ),
-          Container(
-            height: 50,
-            color: Colors.red,
-          )
+          const Center(
+            child: Text(
+              'About me',
+              style: TextStyle(color: Colors.white, fontSize: 50,fontFamily:'Quicksand'),
+            ),
+          ),Row(children: [],)
         ],
       ),
     );
