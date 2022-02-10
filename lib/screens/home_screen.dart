@@ -192,8 +192,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Row(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
-                                            Column(
+                                            Column( crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                               children: [
                                                 const Text(
                                                   'Welcome To My Portfolio !',
@@ -201,9 +204,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       fontFamily: 'Quicksand',
                                                       color: Colors.orange,
                                                       fontSize: 36),
-                                                ),
-                                                const SizedBox(
-                                                  height: 40,
                                                 ),
                                                 const Text(
                                                   'SARKHANOV',
@@ -338,9 +338,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         ),
                                                         onPressed: linkedURL,
                                                         iconSize: 40),
-                                                    const SizedBox(
-                                                      width: 10,
-                                                    ),
                                                     IconButton(
                                                         icon: SvgPicture.asset(
                                                           'images/dribble.svg',
@@ -352,7 +349,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   ],
                                                 ),
                                               ],
-                                            ),Image.asset('name')
+                                            ),
+                                            Image.asset(
+                                              'images/mansursar.png',
+                                              height: 625,
+                                              width: 600,
+                                              fit: BoxFit.cover,
+                                            )
                                           ],
                                         ),
                                         const SizedBox(
