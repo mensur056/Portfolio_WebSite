@@ -38,7 +38,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Text(
                   '< /',
-                  style: TextStyle(color: Colors.white, fontSize: 30,fontFamily: 'Quintessential'),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontFamily: 'Quintessential'),
                 ),
                 SizedBox(
                   width: 10,
@@ -65,7 +68,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Text(
                   '/ >',
-                  style: TextStyle(color: Colors.white, fontSize: 30,fontFamily: 'Quintessential'),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontFamily: 'Quintessential'),
                 )
               ],
             ),
@@ -180,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: colourC == Colors.red
                                 ? const ContactScreen()
                                 : Padding(
-                                    padding: const EdgeInsets.only(left: 160),
+                                    padding: const EdgeInsets.only(left: 100),
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -192,11 +198,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                               color: Colors.orange,
                                               fontSize: 36),
                                         ),
+
                                         const SizedBox(
-                                          width: 10,
-                                        ),
-                                        const SizedBox(
-                                          height: 30,
+                                          height: 40,
                                         ),
                                         const Text(
                                           'SARKHANOV',
@@ -206,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               fontSize: 36),
                                         ),
                                         const SizedBox(
-                                          height: 15,
+                                          height: 20,
                                         ),
                                         const Text(
                                           'MENSUR',
@@ -216,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               fontSize: 36),
                                         ),
                                         const SizedBox(
-                                          height: 15,
+                                          height: 20,
                                         ),
                                         Row(
                                           children: [
@@ -261,7 +265,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ],
                                         ),
                                         const SizedBox(
-                                          height: 25,
+                                          height: 35,
                                         ),
                                         Row(
                                           children: [
@@ -333,6 +337,92 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 onPressed: dribbleURL,
                                                 iconSize: 40),
                                           ],
+                                        ),
+                                        const SizedBox(
+                                          height: 190,
+                                        ),
+                                        const Center(
+                                          child: Text(
+                                            'About me',
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 65,
+                                                fontFamily: 'Quicksand'),
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          height: 30,
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(left: 10.0),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Image.asset(
+                                                'images/mansur.png',
+                                                fit: BoxFit.cover,
+                                                height: 400,
+                                                width: 400,
+                                              ),
+                                              const SizedBox(
+                                                width: 60,
+                                              ),
+                                              Column(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: const [
+                                                  Text(
+                                                    'Who am I?',
+                                                    style: TextStyle(
+                                                        color: Colors.red,
+                                                        fontSize: 22),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 15,
+                                                  ),
+                                                  Text(
+                                                    'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer.',
+                                                    style: TextStyle(
+                                                        color: Colors.white,fontFamily: 'Rowdies',
+                                                        fontSize: 30),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
+                                                  Text(
+                                                    'I study at Azerbaijan State Oil and Industry, My faculty is Mechatronics and Robotics engineering.',
+                                                    style: TextStyle(
+                                                        color: Colors.grey,
+                                                        fontSize: 15),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Text(
+                                                    'I have been developing mobile apps for over 1 year now. I am learning new something, For example :',
+                                                    style: TextStyle(
+                                                        color: Colors.grey,
+                                                        fontSize: 15),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Text(
+                                                    'SQL, Python, HTML, CSS, Java Script, Arduino,',
+                                                    style: TextStyle(
+                                                        color: Colors.grey,
+                                                        fontSize: 15),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         )
                                       ],
                                     ),
@@ -340,75 +430,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                   ),
           ),
-          const SizedBox(
-            height: 198,
-          ),
-          const Center(
-            child: Text(
-              'About me',
-              style: TextStyle(
-                  color: Colors.white, fontSize: 65, fontFamily: 'Quicksand'),
-            ),
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Image.asset(
-                  'images/mansur.png',
-                  fit: BoxFit.cover,
-                  height: 400,
-                  width: 400,
-                ),
-                const SizedBox(
-                  width: 60,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Who am I?',
-                      style: TextStyle(color: Colors.red, fontSize: 22),
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer.',
-                      style: TextStyle(color: Colors.white, fontSize: 30),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'I study at Azerbaijan State Oil and Industry University, My faculty is Mechatronics and Robotics engineering.',
-                      style: TextStyle(color: Colors.grey, fontSize: 15),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'I have been developing mobile apps for over 1 year now. I am learning new something, For example :',
-                      style: TextStyle(color: Colors.grey, fontSize: 15),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'SQL, Python, HTML, CSS, Java Script, Arduino,',
-                      style: TextStyle(color: Colors.grey, fontSize: 15),
-                    )
-                  ],
-                )
-              ],
-            ),
-          )
         ],
       ),
     );
