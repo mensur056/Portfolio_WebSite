@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               children: const [
                 SizedBox(
-                  width: 85,
+                  width:50,
                 ),
                 Text(
                   '< /',
@@ -477,7 +477,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     height: 5,
                                                   ),
                                                   const Text(
-                                                    'SQL, Python, HTML, CSS, Java Script, Arduino.',
+                                                    'SQL, Python, HTML, CSS, Java Script, Arduino. I want to be Full Stuck developer',
                                                     style: TextStyle(
                                                         color: Colors.grey,
                                                         fontSize: 15),
