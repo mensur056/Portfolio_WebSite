@@ -207,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     style: TextStyle(
                                                         fontFamily: 'Quicksand',
                                                         color: Colors.orange,
-                                                        fontSize: 55),
+                                                        fontSize: 50),
                                                   ),
                                                   const SizedBox(
                                                     height: 40,
@@ -215,8 +215,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   const Text(
                                                     'SARKHANOV',
                                                     style: TextStyle(
-                                                        fontFamily:
-                                                            'Yellowtail',
+                                                        fontFamily: 'Rowdies',
                                                         color: Colors.green,
                                                         fontSize: 45),
                                                   ),
@@ -226,8 +225,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   const Text(
                                                     'MENSUR',
                                                     style: TextStyle(
-                                                        fontFamily:
-                                                            'Yellowtail',
+                                                        fontFamily: 'Rowdies',
                                                         color: Colors.green,
                                                         fontSize: 45),
                                                   ),
@@ -248,14 +246,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         animatedTexts: [
                                                           TypewriterAnimatedText(
                                                             'Flutter Developer',
-                                                            textStyle:
-                                                                const TextStyle(
-                                                                    fontFamily:
-                                                                        'Rowdies',
-                                                                    color: Colors
-                                                                        .white,
-                                                                    fontSize:
-                                                                        35),
+                                                            textStyle: const TextStyle(
+                                                                fontFamily:
+                                                                    'Quicksand',
+                                                                color: Colors
+                                                                    .white,
+                                                                fontSize: 35),
                                                           )
                                                         ],
                                                       ),
@@ -275,20 +271,43 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         animatedTexts: [
                                                           TypewriterAnimatedText(
                                                             'FireBase Developer',
-                                                            textStyle:
-                                                                const TextStyle(
-                                                                    fontFamily:
-                                                                        'Rowdies',
-                                                                    color: Colors
-                                                                        .white,
-                                                                    fontSize:
-                                                                        35),
+                                                            textStyle: const TextStyle(
+                                                                fontFamily:
+                                                                    'Quicksand',
+                                                                color: Colors
+                                                                    .white,
+                                                                fontSize: 35),
                                                           )
                                                         ],
                                                       ),
                                                     ],
                                                   ),
-                                                  const SizedBox(
+
+                                                  Row(
+                                                    children: [
+                                                      const Icon(
+                                                        Icons
+                                                            .arrow_right_outlined,
+                                                        size: 40,
+                                                        color: Colors.red,
+                                                      ),
+                                                      AnimatedTextKit(
+                                                        pause: const Duration(
+                                                            seconds: 2),
+                                                        animatedTexts: [
+                                                          TypewriterAnimatedText(
+                                                            'UI Designer Developer',
+                                                            textStyle: const TextStyle(
+                                                                fontFamily:
+                                                                    'Quicksand',
+                                                                color: Colors
+                                                                    .white,
+                                                                fontSize: 35),
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ), const SizedBox(
                                                     height: 35,
                                                   ),
                                                   Row(
@@ -369,7 +388,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 ],
                                               ),
                                             ),
-
                                             Image.asset(
                                               'images/mans.png',
                                               height: 575,
