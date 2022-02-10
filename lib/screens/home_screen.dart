@@ -351,21 +351,23 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Text(
               'About me',
               style: TextStyle(
-                  color: Colors.white, fontSize: 50, fontFamily: 'Quicksand'),
+                  color: Colors.white, fontSize: 65, fontFamily: 'Quicksand'),
             ),
           ),
           const SizedBox(
             height: 30,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 70.0),
+            padding: const EdgeInsets.only(left: 90.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(
                   'images/mansur.png',
                   fit: BoxFit.cover,
-                  height: 420,
-                  width: 420,
+                  height: 400,
+                  width: 400,
                 ),
                 const SizedBox(
                   width: 60,
@@ -376,22 +378,33 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: const [
                     Text(
                       'Who am I?',
-                      style: TextStyle(color: Colors.red, fontSize: 20),
+                      style: TextStyle(color: Colors.red, fontSize: 22),
                     ),
                     SizedBox(
                       height: 15,
                     ),
                     Text(
-                      'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer',
+                      'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer.',
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     Text(
-                      'I study at Azerbaijan State Oil and Industry University, My occupation is Mechatronics and Robotics engineering.\nI have been developing mobile apps for over 1 year now.',
+                      'I study at Azerbaijan State Oil and Industry University, My faculty is Mechatronics and Robotics engineering.',
                       style: TextStyle(color: Colors.grey, fontSize: 15),
-                    )
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      'I have been developing mobile apps for over 1 year now. I am learning new something, For example :',
+                      style: TextStyle(color: Colors.grey, fontSize: 15),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text('SQL, Python, HTML, CSS, Java Script, Arduino,',style: TextStyle(color: Colors.grey, fontSize: 15),)
                   ],
                 )
               ],
