@@ -375,11 +375,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     MainAxisAlignment.start,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
-                                                children:  [
+                                                children: [
                                                   const Text(
                                                     'Who am I?',
                                                     style: TextStyle(
-                                                        color: Colors.red,fontFamily: 'Quintessential',
+                                                        color: Colors.red,
+                                                        fontFamily:
+                                                            'Quintessential',
                                                         fontSize: 22),
                                                   ),
                                                   const SizedBox(
@@ -418,10 +420,25 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     style: TextStyle(
                                                         color: Colors.grey,
                                                         fontSize: 15),
-                                                  ),const SizedBox(
+                                                  ),
+                                                  const SizedBox(
                                                     height: 12,
                                                   ),
-                                                 Container(height: 1,width: 700,color: Colors.grey,)
+                                                  Container(
+                                                    height: 1,
+                                                    width: 700,
+                                                    color: Colors.grey,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Column(
+                                                        children: [],
+                                                      ),
+                                                      Column(
+                                                        children: [],
+                                                      )
+                                                    ],
+                                                  )
                                                 ],
                                               )
                                             ],
