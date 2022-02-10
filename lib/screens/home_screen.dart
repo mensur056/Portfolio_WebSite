@@ -354,14 +354,42 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.white, fontSize: 50, fontFamily: 'Quicksand'),
             ),
           ),
+          const SizedBox(
+            height: 30,
+          ),
           Padding(
-            padding: const EdgeInsets.only(left:70.0),
+            padding: const EdgeInsets.only(left: 70.0),
             child: Row(
               children: [
                 Image.asset(
-                  'images/mensur_1.jpg',fit: BoxFit.cover,
-                  height: 500,
-                  width: 500,
+                  'images/mansur.png',
+                  fit: BoxFit.cover,
+                  height: 420,
+                  width: 420,
+                ),
+                const SizedBox(
+                  width: 60,
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Text(
+                      'Who am I?',
+                      style: TextStyle(color: Colors.red, fontSize: 20),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer',
+                      style: TextStyle(color: Colors.white, fontSize: 30),
+                    ),
+                    Text(
+                      'I study at Azerbaijan State Oil and Industry University in Baku. I have been developing mobile apps for over 1 year now.',
+                      style: TextStyle(color: Colors.grey),
+                    )
+                  ],
                 )
               ],
             ),
