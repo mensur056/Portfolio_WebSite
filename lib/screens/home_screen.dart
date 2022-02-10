@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.black,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(top:25.0),
+            padding: const EdgeInsets.only(top: 25.0),
             child: Row(
               children: [
                 const SizedBox(
@@ -172,10 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         children: [
           const SizedBox(
-            height: 35,
-          ),
-          const SizedBox(
-            height: 40,
+            height: 70,
           ),
           Center(
             child: colourP == Colors.red
@@ -268,7 +265,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ],
                                         ),
                                         const SizedBox(
-                                          height: 15,
+                                          height: 25,
                                         ),
                                         Row(
                                           children: [
@@ -347,6 +344,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                   ),
           ),
+          const SizedBox(
+            height: 198,
+          ),
+          Container(
+            height: 50,
+            color: Colors.red,
+          )
         ],
       ),
     );
