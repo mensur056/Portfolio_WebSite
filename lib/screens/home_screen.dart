@@ -354,14 +354,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.white, fontSize: 50, fontFamily: 'Quicksand'),
             ),
           ),
-          Row(
-            children: [
-              Image.asset(
-                'images/mensur_1.jpg',
-                height: 80,
-                width: 80,
-              )
-            ],
+          Padding(
+            padding: const EdgeInsets.only(left:70.0),
+            child: Row(
+              children: [
+                Image.asset(
+                  'images/mensur_1.jpg',fit: BoxFit.cover,
+                  height: 500,
+                  width: 500,
+                )
+              ],
+            ),
           )
         ],
       ),
