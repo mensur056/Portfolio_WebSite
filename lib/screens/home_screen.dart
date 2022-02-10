@@ -26,152 +26,148 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.black, actions: [
-        const SizedBox(
-          width: 85,
-        ),
-        Column(
-          children: [
-            const SizedBox(
-              height: 20,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(top:25.0),
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 85,
+                ),
+                SvgPicture.asset(
+                  'images/icons8-flutter.svg',
+                  width: 22,
+                  height: 22,
+                  color: Colors.white,
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text(
+                  'Mensur',
+                  style: TextStyle(
+                      fontFamily: 'GreatVibes',
+                      fontSize: 30,
+                      color: Colors.white),
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                const Text(
+                  'Sarkhanov',
+                  style: TextStyle(
+                      fontFamily: 'GreatVibes',
+                      fontSize: 30,
+                      color: Colors.white),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                SvgPicture.asset(
+                  'images/icons8-flutter.svg',
+                  width: 22,
+                  height: 22,
+                  color: Colors.white,
+                ),
+              ],
             ),
-            SvgPicture.asset(
-              'images/icons8-flutter.svg',
-              width: 22,
-              height: 22,
-              color: Colors.blue,
-            ),
-          ],
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        Column(
-          children: const [
-            SizedBox(
-              height: 15,
-            ),
-            Text(
-              'Mensur',
-              style: TextStyle(
-                  fontFamily: 'GreatVibes', fontSize: 30, color: Colors.white),
-            ),
-          ],
-        ),
-        const SizedBox(
-          width: 5,
-        ),
-        Column(
-          children: const [
-            SizedBox(
-              height: 15,
-            ),
-            Text(
-              'Sarkhanov',
-              style: TextStyle(
-                  fontFamily: 'GreatVibes', fontSize: 30, color: Colors.white),
-            ),
-          ],
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        Column(
-          children: [
-            const SizedBox(
-              height: 20,
-            ),
-            SvgPicture.asset(
-              'images/icons8-flutter.svg',
-              width: 22,
-              height: 22,
-              color: Colors.blue,
-            ),
-          ],
-        ),
-        const Spacer(),
-        TextButton(
-          onPressed: () {
-            setState(() {
-              if (colourH == Colors.grey) {
-                colourH = Colors.red;
-                colourC = Colors.grey;
-                colourK = Colors.grey;
-                colourP = Colors.grey;
-              } else if (colourH == Colors.red) {
-                colourH = Colors.grey;
-              }
-            });
-          },
-          child: Text(
-            'Home',
-            style: TextStyle(fontSize: 25, color: colourH),
           ),
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        TextButton(
-          onPressed: () {
-            setState(() {
-              if (colourP == Colors.grey) {
-                colourP = Colors.red;
-                colourC = Colors.grey;
-                colourK = Colors.grey;
-                colourH = Colors.grey;
-              } else if (colourP == Colors.red) {
-                colourP = Colors.grey;
-              }
-            });
-          },
-          child: Text(
-            'Project',
-            style: TextStyle(fontSize: 25, color: colourP),
-          ),
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        TextButton(
-          onPressed: () {
-            setState(() {
-              if (colourK == Colors.grey) {
-                colourK = Colors.red;
-                colourC = Colors.grey;
-                colourP = Colors.grey;
-                colourH = Colors.grey;
-              } else if (colourK == Colors.red) {
-                colourK = Colors.grey;
-              }
-            });
-          },
-          child: Text(
-            'Knowledge',
-            style: TextStyle(fontSize: 25, color: colourK),
-          ),
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        TextButton(
-          onPressed: () {
-            setState(() {
-              if (colourC == Colors.grey) {
-                colourC = Colors.red;
-                colourP = Colors.grey;
-                colourK = Colors.grey;
-                colourH = Colors.grey;
-              } else if (colourC == Colors.red) {
-                colourC = Colors.grey;
-              }
-            });
-          },
-          child: Text(
-            'Contact',
-            style: TextStyle(fontSize: 25, color: colourC),
-          ),
-        ),
-      ]),
+          const Spacer(),
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Row(
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      if (colourH == Colors.grey) {
+                        colourH = Colors.red;
+                        colourC = Colors.grey;
+                        colourK = Colors.grey;
+                        colourP = Colors.grey;
+                      } else if (colourH == Colors.red) {
+                        colourH = Colors.grey;
+                      }
+                    });
+                  },
+                  child: Text(
+                    'Home',
+                    style: TextStyle(fontSize: 25, color: colourH),
+                  ),
+                ),
+                const SizedBox(
+                  width: 18,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      if (colourP == Colors.grey) {
+                        colourP = Colors.red;
+                        colourC = Colors.grey;
+                        colourK = Colors.grey;
+                        colourH = Colors.grey;
+                      } else if (colourP == Colors.red) {
+                        colourP = Colors.grey;
+                      }
+                    });
+                  },
+                  child: Text(
+                    'Project',
+                    style: TextStyle(fontSize: 25, color: colourP),
+                  ),
+                ),
+                const SizedBox(
+                  width: 18,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      if (colourK == Colors.grey) {
+                        colourK = Colors.red;
+                        colourC = Colors.grey;
+                        colourP = Colors.grey;
+                        colourH = Colors.grey;
+                      } else if (colourK == Colors.red) {
+                        colourK = Colors.grey;
+                      }
+                    });
+                  },
+                  child: Text(
+                    'Knowledge',
+                    style: TextStyle(fontSize: 25, color: colourK),
+                  ),
+                ),
+                const SizedBox(
+                  width: 18,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      if (colourC == Colors.grey) {
+                        colourC = Colors.red;
+                        colourP = Colors.grey;
+                        colourK = Colors.grey;
+                        colourH = Colors.grey;
+                      } else if (colourC == Colors.red) {
+                        colourC = Colors.grey;
+                      }
+                    });
+                  },
+                  child: Text(
+                    'Contact',
+                    style: TextStyle(fontSize: 25, color: colourC),
+                  ),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
       backgroundColor: kPrimaryColor,
       body: ListView(
         children: [
