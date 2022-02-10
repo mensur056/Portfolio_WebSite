@@ -186,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: colourC == Colors.red
                                 ? const ContactScreen()
                                 : Padding(
-                                    padding: const EdgeInsets.only(left: 100),
+                                    padding: const EdgeInsets.only(left: 80),
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -197,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
-                                                  left: 100),
+                                                  left: 80),
                                               child: Column(
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
@@ -207,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     style: TextStyle(
                                                         fontFamily: 'Quicksand',
                                                         color: Colors.orange,
-                                                        fontSize: 36),
+                                                        fontSize: 55),
                                                   ),
                                                   const SizedBox(
                                                     height: 40,
@@ -218,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         fontFamily:
                                                             'Yellowtail',
                                                         color: Colors.green,
-                                                        fontSize: 36),
+                                                        fontSize: 45),
                                                   ),
                                                   const SizedBox(
                                                     height: 10,
@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         fontFamily:
                                                             'Yellowtail',
                                                         color: Colors.green,
-                                                        fontSize: 36),
+                                                        fontSize: 45),
                                                   ),
                                                   const SizedBox(
                                                     height: 20,
@@ -239,7 +239,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       const Icon(
                                                         Icons
                                                             .arrow_right_outlined,
-                                                        size: 35,
+                                                        size: 40,
                                                         color: Colors.red,
                                                       ),
                                                       AnimatedTextKit(
@@ -255,7 +255,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                                     color: Colors
                                                                         .white,
                                                                     fontSize:
-                                                                        25),
+                                                                        35),
                                                           )
                                                         ],
                                                       ),
@@ -266,7 +266,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       const Icon(
                                                         Icons
                                                             .arrow_right_outlined,
-                                                        size: 35,
+                                                        size: 40,
                                                         color: Colors.red,
                                                       ),
                                                       AnimatedTextKit(
@@ -282,7 +282,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                                     color: Colors
                                                                         .white,
                                                                     fontSize:
-                                                                        25),
+                                                                        35),
                                                           )
                                                         ],
                                                       ),
@@ -369,13 +369,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 ],
                                               ),
                                             ),
-                                            const SizedBox(
-                                              width: 80,
-                                            ),
+
                                             Image.asset(
                                               'images/mans.png',
-                                              height: 600,
-                                              width: 400,
+                                              height: 575,
+                                              width: 450,
                                             )
                                           ],
                                         ),
