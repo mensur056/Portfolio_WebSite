@@ -376,6 +376,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
+                                                  const SizedBox(
+                                                    height: 30,
+                                                  ),
                                                   const Text(
                                                     'Who am I?',
                                                     style: TextStyle(
@@ -429,14 +432,130 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     width: 700,
                                                     color: Colors.grey,
                                                   ),
+                                                  const SizedBox(
+                                                    height: 12,
+                                                  ),
                                                   Row(
                                                     children: [
                                                       Column(
-                                                        children: [],
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Row(
+                                                            children: const [
+                                                              Text(
+                                                                'Name:',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                              Text(
+                                                                '  Mansur Sarkhanov',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .green,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                          const SizedBox(
+                                                            height: 8,
+                                                          ),
+                                                          Row(
+                                                            children: const [
+                                                              Text(
+                                                                'Age:',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                              Text(
+                                                                '  19',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .green,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      const SizedBox(
+                                                        width: 45,
                                                       ),
                                                       Column(
-                                                        children: [],
-                                                      )
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Row(
+                                                            children: const [
+                                                              Text(
+                                                                'Email:',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                              Text(
+                                                                '  mansur.sarxanov@gmail.com',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .green,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                          const SizedBox(
+                                                            height: 8,
+                                                          ),
+                                                          Row(
+                                                            children: const [
+                                                              Text(
+                                                                'Country:',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                              Text(
+                                                                '  Azerbaijan',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .green,
+                                                                    fontFamily:
+                                                                        'Rowdies',
+                                                                    fontSize:
+                                                                        20),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
                                                     ],
                                                   )
                                                 ],
