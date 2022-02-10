@@ -385,9 +385,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer',
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Text(
-                      'I study at Azerbaijan State Oil and Industry University in Baku. I have been developing mobile apps for over 1 year now.',
-                      style: TextStyle(color: Colors.grey),
+                      'I study at Azerbaijan State Oil and Industry University, My occupation is Mechatronics and Robotics engineering.\nI have been developing mobile apps for over 1 year now.',
+                      style: TextStyle(color: Colors.grey, fontSize: 15),
                     )
                   ],
                 )
