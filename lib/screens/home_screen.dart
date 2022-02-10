@@ -198,7 +198,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                               color: Colors.orange,
                                               fontSize: 36),
                                         ),
-
                                         const SizedBox(
                                           height: 40,
                                         ),
@@ -376,49 +375,53 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     MainAxisAlignment.start,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
-                                                children: const [
-                                                  Text(
+                                                children:  [
+                                                  const Text(
                                                     'Who am I?',
                                                     style: TextStyle(
-                                                        color: Colors.red,
+                                                        color: Colors.red,fontFamily: 'Quintessential',
                                                         fontSize: 22),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 15,
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     'I am Mansur Sarkhanov, I am 18 years old,\na Flutter Developer and Firebase Developer.',
                                                     style: TextStyle(
-                                                        color: Colors.white,fontFamily: 'Rowdies',
+                                                        color: Colors.white,
+                                                        fontFamily: 'Rowdies',
                                                         fontSize: 30),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 10,
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     'I study at Azerbaijan State Oil and Industry, My faculty is Mechatronics and Robotics engineering.',
                                                     style: TextStyle(
                                                         color: Colors.grey,
                                                         fontSize: 15),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 5,
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     'I have been developing mobile apps for over 1 year now. I am learning new something, For example :',
                                                     style: TextStyle(
                                                         color: Colors.grey,
                                                         fontSize: 15),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 5,
                                                   ),
-                                                  Text(
-                                                    'SQL, Python, HTML, CSS, Java Script, Arduino,',
+                                                  const Text(
+                                                    'SQL, Python, HTML, CSS, Java Script, Arduino.',
                                                     style: TextStyle(
                                                         color: Colors.grey,
                                                         fontSize: 15),
-                                                  )
+                                                  ),const SizedBox(
+                                                    height: 12,
+                                                  ),
+                                                 Container(height: 1,width: 700,color: Colors.grey,)
                                                 ],
                                               )
                                             ],
