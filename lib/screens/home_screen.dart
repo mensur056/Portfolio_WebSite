@@ -350,9 +350,19 @@ class _HomeScreenState extends State<HomeScreen> {
           const Center(
             child: Text(
               'About me',
-              style: TextStyle(color: Colors.white, fontSize: 50,fontFamily:'Quicksand'),
+              style: TextStyle(
+                  color: Colors.white, fontSize: 50, fontFamily: 'Quicksand'),
             ),
-          ),Row(children: [],)
+          ),
+          Row(
+            children: [
+              Image.asset(
+                'images/mensur_1.jpg',
+                height: 80,
+                width: 80,
+              )
+            ],
+          )
         ],
       ),
     );
