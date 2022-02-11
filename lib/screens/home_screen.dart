@@ -388,10 +388,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 ],
                                               ),
                                             ),
-                                            Image.asset(
-                                              'images/mans.png',
-                                              height: 575,
-                                              width: 450,
+                                            Padding(
+                                              padding: const EdgeInsets.only(right:0),
+                                              child: Image.asset(
+                                                'images/mans.png',
+                                                height: 595,
+                                                width: 480,
+                                              ),
                                             )
                                           ],
                                         ),
