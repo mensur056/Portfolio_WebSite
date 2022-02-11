@@ -173,9 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: kPrimaryColor,
       body: ListView(
         children: [
-          const SizedBox(
-            height: 50,
-          ),
+
           Center(
             child: colourP == Colors.red
                 ? const ProjectScreen()
@@ -196,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsets.only(
+                                              padding: const EdgeInsets.only(top:50,
                                                   left: 80),
                                               child: Column(
                                                 crossAxisAlignment:
@@ -391,7 +389,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             Padding(
                                               padding: const EdgeInsets.only(right:0),
                                               child: Image.asset(
-                                                'images/mans.png',
+                                                'images/123.png',
                                                 height: 595,
                                                 width: 480,
                                               ),
