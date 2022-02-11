@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               children: const [
                 SizedBox(
-                  width:50,
+                  width: 50,
                 ),
                 Text(
                   '< /',
@@ -282,7 +282,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       ),
                                                     ],
                                                   ),
-
                                                   Row(
                                                     children: [
                                                       const Icon(
@@ -307,7 +306,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         ],
                                                       ),
                                                     ],
-                                                  ), const SizedBox(
+                                                  ),
+                                                  const SizedBox(
                                                     height: 35,
                                                   ),
                                                   Row(
@@ -477,7 +477,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     height: 5,
                                                   ),
                                                   const Text(
-                                                    'SQL, Python, HTML, CSS, Java Script, Arduino. I want to be Full Stuck developer',
+                                                    'SQL, Python, HTML, CSS, Java Script, Arduino. I want to be Full Stuck developer.',
+                                                    style: TextStyle(
+                                                        color: Colors.grey,
+                                                        fontSize: 15),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  const Text(
+                                                    'My favorite activity is playing the Chess',
                                                     style: TextStyle(
                                                         color: Colors.grey,
                                                         fontSize: 15),
