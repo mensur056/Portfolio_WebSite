@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.black,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(top: 25.0),
+            padding: const EdgeInsets.only(top: 15.0),
             child: Row(
               children: const [
                 SizedBox(
@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const Spacer(),
           Padding(
-            padding: const EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.only(top: 15),
             child: Row(
               children: [
                 GestureDetector(
