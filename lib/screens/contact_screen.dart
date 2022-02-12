@@ -69,20 +69,22 @@ class ContactScreen extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
-                    Container(
-                      height: 50,
-                      width: 120,
-                      decoration: const BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.all(Radius.circular(8))),
-                      child: const Center(
-                          child: Text(
-                        'Submit',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 18,
-                            fontFamily: 'Rowdies'),
-                      )),
+                    TextButton(onPressed: (){},
+                      child: Container(
+                        height: 50,
+                        width: 150,
+                        decoration: const BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.all(Radius.circular(8))),
+                        child: const Center(
+                            child: Text(
+                          'Submit',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 18,
+                              fontFamily: 'Rowdies'),
+                        )),
+                      ),
                     )
                   ],
                 ),
