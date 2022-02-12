@@ -38,7 +38,7 @@ class ProjectScreen extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Expanded(
@@ -47,7 +47,7 @@ class ProjectScreen extends StatelessWidget {
                   color: Colors.blue,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
             ],
