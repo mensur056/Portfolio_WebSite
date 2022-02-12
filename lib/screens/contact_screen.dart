@@ -14,19 +14,29 @@ class ContactScreen extends StatelessWidget {
           Expanded(
             flex: 5,
             child: Container(
-              color: Colors.red,
-              height: 500,
+              color: const Color(0xFF3e8c8b),
+              height: 500,child: Image.asset('images/email-gif.jpg'),
             ),
           ),
           Expanded(
             flex: 3,
             child: Container(
-              color: Colors.yellow,
+              color: const Color(0xFF3e8c8b),
               height: 500,
               child: Column(
                 children: const [
+                  Text('Contact me'),
                   TextField(
-                    decoration: InputDecoration(hintText: 'hello'),
+                    decoration: InputDecoration(
+                        hintText: 'hello', border: OutlineInputBorder()),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                        hintText: 'hello', border: OutlineInputBorder()),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                        hintText: 'hello', border: OutlineInputBorder()),
                   )
                 ],
               ),
