@@ -5,13 +5,55 @@ class ProjectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        Text(
-          'Project',
-          style: TextStyle(color: Colors.white),
-        )
-      ],
+    return Container(
+      height: 700,
+      color: const Color(0xFF433f40),
+      child: Column(
+        children: [
+          const Text(
+            'What I do?',
+            style: TextStyle(
+                color: Colors.green, fontFamily: 'Yellowtail', fontSize: 50),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Expanded(
+                child: Container(
+                  height: 300,
+                  color: Colors.red,
+                ),
+              ),
+              SizedBox(
+                width: 15,
+              ),
+              Expanded(
+                child: Container(
+                  height: 300,
+                  color: Colors.black,
+                ),
+              ),
+              SizedBox(
+                width: 15,
+              ),
+              Expanded(
+                child: Container(
+                  height: 300,
+                  color: Colors.blue,
+                ),
+              ),
+              SizedBox(
+                width: 15,
+              ),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
