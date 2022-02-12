@@ -6,27 +6,21 @@ class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF3e8c8b),
-      height: 700,
+      height: 1000,
+      color: Colors.white,
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 50.0, top: 120),
-            child: Image.asset(
-              'images/email-gif.jpg',
+          Expanded(
+            child: Container(
+              color: Colors.red,
+              height: 500,
             ),
           ),
-          Column(
-            children: const [
-              TextField(
-                decoration: InputDecoration(hintText: 'Full name'),
-              ),
-              TextField(
-                decoration: InputDecoration(hintText: 'Email Address'),
-              ),
-              TextField(decoration: InputDecoration(hintText: 'Your Message'))
-            ],
+          Expanded(
+            child: Container(
+              color: Colors.yellow,
+              height: 500,
+            ),
           )
         ],
       ),
