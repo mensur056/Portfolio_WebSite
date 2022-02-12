@@ -6,16 +6,24 @@ class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1000,
-      color: Colors.white,
+      height: 700,
+      color: const Color(0xFF3e8c8b),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             flex: 5,
-            child: Container(
-              color: const Color(0xFF3e8c8b),
-              height: 500,child: Image.asset('images/email-gif.jpg'),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 100.0, top: 80),
+              child: Container(
+                color: const Color(0xFF3e8c8b),
+                height: 500,
+                child: Image.asset(
+                  'images/email-gif.jpg',
+                  height: 500,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
           ),
           Expanded(
@@ -25,18 +33,35 @@ class ContactScreen extends StatelessWidget {
               height: 500,
               child: Column(
                 children: const [
-                  Text('Contact me'),
-                  TextField(
-                    decoration: InputDecoration(
-                        hintText: 'hello', border: OutlineInputBorder()),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'Contact me',
+                    style: TextStyle(fontFamily: 'Yellowtail', fontSize: 70),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                   TextField(
                     decoration: InputDecoration(
-                        hintText: 'hello', border: OutlineInputBorder()),
+                        hintText: 'Full Name', border: OutlineInputBorder()),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                   TextField(
                     decoration: InputDecoration(
-                        hintText: 'hello', border: OutlineInputBorder()),
+                        hintText: 'Email Address',
+                        border: OutlineInputBorder()),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextField(
+                    maxLines: 10,
+                    decoration: InputDecoration(
+                        hintText: 'Your message', border: OutlineInputBorder()),
                   )
                 ],
               ),
