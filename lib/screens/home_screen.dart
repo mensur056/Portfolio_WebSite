@@ -295,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                             seconds: 2),
                                                         animatedTexts: [
                                                           TypewriterAnimatedText(
-                                                            'UI Designer Developer',
+                                                            'UI Designer',
                                                             textStyle: const TextStyle(
                                                                 fontFamily:
                                                                     'Quicksand',
