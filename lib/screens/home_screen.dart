@@ -15,33 +15,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Color textColor = Colors.grey;
-  int _enterCounter = 0;
-  int _exitCounter = 0;
-  double x = 0.0;
-  double y = 0.0;
-
-  void _incrementEnter(PointerEvent details) {
-    setState(() {
-      _enterCounter++;
-    });
-  }
-
-  void _incrementExit(PointerEvent details) {
-    setState(() {
-      textColor = Colors.blue;
-      _exitCounter++;
-    });
-  }
-
-  void _updateLocation(PointerEvent details) {
-    setState(() {
-      textColor = Colors.red;
-      x = details.position.dx;
-      y = details.position.dy;
-    });
-  }
-
   final style = const TextStyle(
     fontWeight: FontWeight.bold,
   );
@@ -108,61 +81,53 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.only(top: 15),
             child: Row(
               children: [
-                MouseRegion(onEnter: _incrementEnter,
-                  onHover: _updateLocation,
-                  onExit: _incrementExit,
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        if (colourH == Colors.grey) {
-                          colourH = Colors.red;
-                          colourC = Colors.grey;
-                          colourK = Colors.grey;
-                          colourP = Colors.grey;
-                        } else if (colourH == Colors.red) {
-                          colourH = Colors.grey;
-                        }
-                      });
-                    },
-                    child: Text(
-                      'Home',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: textColor,
-                      ),
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      if (colourH == Colors.grey) {
+                        colourH = Colors.red;
+                        colourC = Colors.grey;
+                        colourK = Colors.grey;
+                        colourP = Colors.grey;
+                      } else if (colourH == Colors.red) {
+                        colourH = Colors.grey;
+                      }
+                    });
+                  },
+                  child: Text(
+                    'Home',
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: colourH,
                     ),
                   ),
                 ),
                 const SizedBox(
                   width: 18,
                 ),
-                MouseRegion(onEnter: _incrementEnter,
-                  onHover: _updateLocation,
-                  onExit: _incrementExit,
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        if (colourP == Colors.grey) {
-                          colourP = Colors.red;
-                          colourC = Colors.grey;
-                          colourK = Colors.grey;
-                          colourH = Colors.grey;
-                        } else if (colourP == Colors.red) {
-                          colourP = Colors.grey;
-                        }
-                      });
-                    },
-                    child: Text(
-                      'Project',
-                      style: TextStyle(fontSize: 25, color: textColor),
-                    ),
+                TextButton(
+                  onPressed: () {
+                    setState(() {
+                      if (colourP == Colors.grey) {
+                        colourP = Colors.red;
+                        colourC = Colors.grey;
+                        colourK = Colors.grey;
+                        colourH = Colors.grey;
+                      } else if (colourP == Colors.red) {
+                        colourP = Colors.grey;
+                      }
+                    });
+                  },
+                  child: Text(
+                    'Project',
+                    style: TextStyle(fontSize: 25, color: colourP),
                   ),
                 ),
                 const SizedBox(
                   width: 18,
                 ),
-                GestureDetector(
-                  onTap: () {
+                TextButton(
+                  onPressed: () {
                     setState(() {
                       if (colourK == Colors.grey) {
                         colourK = Colors.red;
@@ -182,8 +147,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   width: 18,
                 ),
-                GestureDetector(
-                  onTap: () {
+                TextButton(
+                  onPressed: () {
                     setState(() {
                       if (colourC == Colors.grey) {
                         colourC = Colors.red;
@@ -482,7 +447,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         color: Colors.white,
                                                         fontFamily:
                                                             'Quintessential',
-                                                        fontSize: 50),
+                                                        fontSize:50),
                                                   ),
                                                   const SizedBox(
                                                     height: 15,
