@@ -206,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     'Welcome To My Portfolio !',
                                                     style: TextStyle(
                                                         fontFamily: 'Quicksand',
-                                                        color: Colors.orange,
+                                                        color: Colors.white,
                                                         fontSize: 50),
                                                   ),
                                                   const SizedBox(
