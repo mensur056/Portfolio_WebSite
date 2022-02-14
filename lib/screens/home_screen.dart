@@ -96,7 +96,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   child: Text(
                     'Home',
-                    style: TextStyle(fontSize: 25, color: colourH,),
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: colourH,
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -173,7 +176,6 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: kPrimaryColor,
       body: ListView(
         children: [
-
           Center(
             child: colourP == Colors.red
                 ? const ProjectScreen()
@@ -194,8 +196,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsets.only(top:50,
-                                                  left: 80),
+                                              padding: const EdgeInsets.only(
+                                                  top: 50, left: 80),
                                               child: Column(
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
@@ -387,7 +389,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.only(right:0),
+                                              padding: const EdgeInsets.only(
+                                                  right: 0),
                                               child: Image.asset(
                                                 'images/123.png',
                                                 height: 595,
@@ -436,15 +439,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     CrossAxisAlignment.start,
                                                 children: [
                                                   const SizedBox(
-                                                    height: 30,
+                                                    height: 20,
                                                   ),
                                                   const Text(
                                                     'Who am I?',
                                                     style: TextStyle(
-                                                        color: Colors.red,
+                                                        color: Colors.white,
                                                         fontFamily:
                                                             'Quintessential',
-                                                        fontSize: 22),
+                                                        fontSize:50),
                                                   ),
                                                   const SizedBox(
                                                     height: 15,
